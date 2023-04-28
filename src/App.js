@@ -8,7 +8,7 @@ function App() {
 
   useEffect(()=>{
     async function fetchDoctors(){
-      const response = await fetch("http://158.101.10.103/get_doctors");
+      const response = await fetch("https://mcms_api.mtron.me/get_doctors");
       const data = await response.json();
       console.log(data)
       setDoctors(data);
